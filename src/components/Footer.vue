@@ -23,4 +23,9 @@ export default {
 </script>
 
 <style lang="scss">
+
+footer{
+  background-color: red;
+  min-height: 700px;
+}
 </style>

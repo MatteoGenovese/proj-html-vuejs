@@ -24,9 +24,10 @@
         <div class="container d-flex align-items-center">
           <div class="box w-50 d-flex flex-column justify-content-center">
             <SectionHeading :page="pages[0]" />
-            <div class="d-flex">
-              <MyButton :msg="'GET IN TOUCH'" :buttonType="'light-blue'" :link="'get in touch'" :classBtn="'mx-3'" />
-              <MyButton :msg="'READ MORE'" :buttonType="'bgc-none'" :link="'about'" />
+            <div class="d-flex home-buttons">
+              <MyButton :msg="'GET IN TOUCH'" :buttonType="'light-blue'" :link="'get in touch'"
+                :classBtn="'mx-3 mt-3'" />
+              <MyButton :msg="'READ MORE'" :buttonType="'bgc-none'" :link="'about'" :classBtn="'mt-3'" />
             </div>
           </div>
         </div>
@@ -202,8 +203,38 @@ export default {
 }
 
 main section {
-  min-height: 700px;
+  min-height: 980px;
 }
+
+section#home {
+  min-height: 976px;
+}
+
+section#about {
+  min-height: 1000px;
+}
+
+section#services {
+  min-height: 940px;
+}
+
+section#process {
+  min-height: 810px;
+}
+
+section#numbers {
+  min-height: 660px;
+}
+
+section#testimonials {
+  min-height: 870px;
+}
+
+section#getintouch {
+  min-height: 950px;
+}
+
+
 
 .nav-bar {
   color: $second_color;
@@ -215,6 +246,10 @@ main section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1.2rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+
 
   &>* {
     height: 100%;
@@ -318,11 +353,17 @@ ul.with-list-style {
     }
   }
 }
+
 .vehicles,
-.certifications{
-  h4{
+.certifications {
+  h4 {
     margin-bottom: 1.5rem;
+    color: $first_color;
   }
+}
+
+div.vehicle-size {
+  color: $first_color;
 }
 
 .certifications {
@@ -337,5 +378,9 @@ ul.with-list-style {
       box-shadow: 5px 5px 4px #dddddd;
     }
   }
+}
+
+div.home-buttons {
+  margin-left: -1rem;
 }
 </style>

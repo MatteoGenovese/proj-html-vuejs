@@ -42,6 +42,10 @@ export default {
 <style lang="scss">
 @import "../styles/variables.scss";
 
+header{
+    font-size: 1.1rem;
+}
+
 section.contacts {
     background-color: $seventh_color;
     color: $second_color;

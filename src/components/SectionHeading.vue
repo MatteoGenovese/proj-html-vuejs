@@ -36,12 +36,14 @@ export default {
 
 .container h2 {
   color: $sixth_color;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+
 }
 
 .container h3 {
-  font-weight: 900;
-  font-size: 2.5rem;
+  font-weight:bold;
+  font-size: 3.3rem;
   display: inline-block;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -53,8 +55,11 @@ export default {
 }
 
 .container p {
+  margin-top: 1.4rem;
   color: $third_color;
   margin-left: 0;
+  font-size: 1.4rem;
+  color: $second_color;
 }
 
 div .subtitle {
@@ -65,9 +70,16 @@ section#about {
   .highlited-subtitle {
     color: $fourth_color;
   }
-
   .non-highlited-subtitle {
     color: $first_color;
+  }
+  p,div{
+    color: rgba($third_color, 0.7);
+  }
+  div.vehicle-size{
+    color: $first_color;
+    font-size: 1.8rem;
+    font-weight: 600;
   }
 }
 
@@ -75,10 +87,12 @@ section#services {
   .highlited-subtitle {
     color: $second_color;
   }
-
   .non-highlited-subtitle {
     color: $second_color;
   }
+    p,div{
+    color: $fifth_color;
+  }  
 
 }
 
@@ -86,20 +100,22 @@ section#process {
   .highlited-subtitle {
     color: $fourth_color;
   }
-
   .non-highlited-subtitle {
     color: $first_color;
   }
+      p,div{
+    color: rgba($third_color, 0.7);
+    }
 }
 
 section#numbers {
   .highlited-subtitle {
     color: $second_color;
   }
-
   .non-highlited-subtitle {
     color: $second_color;
   }
+        
 
 }
 
@@ -111,6 +127,22 @@ section#testimonials {
   .non-highlited-subtitle {
     color: $second_color;
   }
+  p,div{
+    color: $second_color;
+    }
+
+}
+section#getintouch {
+  .highlited-subtitle {
+    color: $fourth_color;
+  }
+
+  .non-highlited-subtitle {
+    color: $first_color;
+  }
+  p,div{
+    color: $fifth_color;
+    }
 
 }
 

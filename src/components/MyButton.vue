@@ -35,11 +35,11 @@ export default {
 @import "../styles/variables.scss";
 
 a.button{
-    padding: 10px 5px;
-    height: 40px;
+
+    height: 50px;
     text-decoration: none;
     border-radius: 5px ;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1.7rem;
 
 }
 a.button.light-blue-button,
