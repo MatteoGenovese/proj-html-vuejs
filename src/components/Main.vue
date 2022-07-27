@@ -19,20 +19,30 @@
           </div>
         </div>
       </div>
+      <SectionHeading :page="pages[0]" />
     </section>
     <section :id="pages[1].title" class="jumbotron">
+      <SectionHeading :page="pages[1]" />
 
     </section>
     <section :id="pages[2].title">
+      <SectionHeading :page="pages[2]" />
 
     </section>
     <section :id="pages[3].title">
+      <SectionHeading :page="pages[3]" />
 
     </section>
     <section :id="pages[4].title">
+      <SectionHeading :page="pages[4]" />
 
     </section>
-    <section :class="pages[5].title">
+    <section :id="pages[5].title">
+      <SectionHeading :page="pages[5]" />
+
+    </section>
+        <section :id="pages[6].title">
+      <SectionHeading :page="pages[6]" />
 
     </section>
 
@@ -42,6 +52,7 @@
 
 <script>
 import NavLink from './NavLink.vue';
+import SectionHeading from './SectionHeading.vue';
 
 export default {
   name: 'Main',
@@ -60,8 +71,9 @@ export default {
     },
   },
   components: {
-        NavLink,
-    }
+    NavLink,
+    SectionHeading
+  }
   // add things here
 
 
@@ -72,13 +84,14 @@ export default {
 @import "../styles/variables.scss";
 
 
-#home{
+#home {
   background-image: url(../assets/bg-9.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 700px;
 }
+
 .nav-bar {
   color: $second_color;
   height: 50px;
