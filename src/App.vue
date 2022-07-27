@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Header />
-    <Main />
-    <Footer />
+    <Header :pages="pages" :contacts="contacts" />
+    <Main :pages="pages" :contacts="contacts" :cards="cards" />
+    <Footer :contacts="contacts" :footerLinks="footerLinks" />
   </div>
 </template>
 

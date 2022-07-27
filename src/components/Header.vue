@@ -30,6 +30,17 @@
 <script >
 export default {
     name: 'Header',
+    props: {
+        pages: {
+            type: Array,
+            required: true,
+        },
+        contacts: {
+            type: Object,
+            required: true,
+        },
+    },
+    // add things here
 
 }
 </script>
@@ -37,15 +48,14 @@ export default {
 <style lang="scss">
 @import "../styles/variables.scss";
 
-header {
-    
-}
+header {}
 
-.contacts{
+.contacts {
     background-color: $seventh_color;
     color: $fifth_color;
 }
-.contacts > *{
+
+.contacts>* {
 
     display: flex;
     justify-content: space-between;
