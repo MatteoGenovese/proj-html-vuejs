@@ -21,7 +21,7 @@
       </div>
       <SectionHeading :page="pages[0]" />
     </section>
-    <section :id="pages[1].title" class="jumbotron">
+    <section :id="pages[1].title.trim()" class="jumbotron">
       <SectionHeading :page="pages[1]" />
 
     </section>
@@ -41,7 +41,7 @@
       <SectionHeading :page="pages[5]" />
 
     </section>
-        <section :id="pages[6].title">
+    <section :id="pages[6].title">
       <SectionHeading :page="pages[6]" />
 
     </section>
@@ -89,6 +89,9 @@ export default {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+section {
   height: 700px;
 }
 
@@ -139,5 +142,35 @@ export default {
 .nav-links {
   height: 100%;
   justify-content: flex-end;
+}
+
+section>* {
+  height: 100%;
+}
+
+section#home {
+  h3 {
+    color: $second_color;
+  }
+
+}
+
+section#about {
+  background-color: $second_color;
+}
+section#services {
+  background-color: $first_color;
+}
+section#process {
+  background-color: rgba($fourth_color, 0.1);
+}
+section#numbers {
+  background-image: url(../assets/bg-10.jpg);
+}
+section#testimonials {
+  background-color: $first_color;
+}
+section#get {
+  background-color: $second_color;
 }
 </style>
