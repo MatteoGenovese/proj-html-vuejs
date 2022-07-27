@@ -3,13 +3,13 @@
         <section class="contacts">
             <div class="container">
                 <div class="open-hours">
-                    Open Hours: Mon - Sat - 9:00 - 18:00
+                    {{ contacts.openHours }}
                 </div>
                 <div class="telephone">
-                    +1 (305) 1234-5678
+                    {{ contacts.telephoneNumber }}
                 </div>
                 <div>
-                    hello@example.com
+                    {{ contacts.email }}
                 </div>
                 <div class="social">
                     <div id="facebook-icon">
@@ -24,10 +24,15 @@
                 </div>
             </div>
         </section>
+
     </header>
 </template>
 
 <script >
+
+
+
+
 export default {
     name: 'Header',
     props: {
@@ -40,6 +45,7 @@ export default {
             required: true,
         },
     },
+
     // add things here
 
 }
@@ -48,37 +54,46 @@ export default {
 <style lang="scss">
 @import "../styles/variables.scss";
 
-header {}
-
 .contacts {
     background-color: $seventh_color;
     color: $fifth_color;
+    height: 50px;
 }
 
-.contacts>* {
-
+.contacts>*{
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
-
-
     &>* {
+        height: 100%;
+        display: flex;
+        align-items: center;
         padding-right: 5px;
         padding-left: 5px;
-
+        ul{
+            margin-bottom: 0;
+        }
         &>* {
+            height: 100%;
+            display: flex;
+            align-items: center;
             padding-right: 5px;
             padding-left: 5px;
+            &>* {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                padding-right: 5px;
+                padding-left: 5px;
+            }
         }
     }
-
-    .open-hours {
-        flex-grow: 1;
-    }
-
-    .social {
-        display: flex;
-    }
+}
+.open-hours{
+    flex-grow: 1;
+}
+.social {
+    display: flex;
 }
 </style>

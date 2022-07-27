@@ -8,9 +8,9 @@
 
 <script>
 
-import Main from './components/Main.vue'
-import Footer from './components/Footer.vue'
-import Header from './components/Header.vue'
+import Main from './components/Main.vue';
+import Footer from './components/Footer.vue';
+import Header from './components/Header.vue';
 
 export default {
   name: 'App',
@@ -25,42 +25,41 @@ export default {
       return {
         pages: [
           {
-            title: 'HOME',
-            extend_title: 'LOGISTICS SERVICES',
-            subtitle: 'CARGO TRANSPORT',
+            title: 'home',
+            extend_title: 'logistic services',
+            subtitle: 'cargo transport',
             description: 'Fractional or exclusive road cargo transportation to all regions, with small, medium and large vehicles.',
           },
           {
-            title: 'ABOUT',
-            extend_title: 'WHO WE ARE',
+            title: 'about',
+            extend_title: 'who we are',
             subtitle: 'Excellence in Transport',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum velit tortor, interdum sed cursus eu, sagittis ut nunc. Sed vitae tellus et arcu aliquet faucibus fermentum non lacus.',
           },
           {
-            title: 'SERVICES',
-            extend_title: 'ROAD TRANSPORT',
+            title: 'services',
+            extend_title: 'road transport',
             subtitle: 'Main Services',
             description: 'With all of this expertise and capability comes an unrivalled commitment to customer service. We will work hard to understand your needs in order to develop a productive, long-term partnership.',
           },
           {
-            title: 'PROCESS',
-            extend_title: 'HOW IT WORKS IN PRACTICE',
+            title: 'process',
+            extend_title: 'how it works in practice',
             subtitle: 'Logistical Procedure',
             description: 'We work with innovative methodologies to ensure that the entire delivery process is done from start to finish as planned.',
           },
           {
-            title: '',
-            extend_title: 'WHAT ARE WE DOING',
+            title: 'numbers',
+            extend_title: 'what are we doing',
             subtitle: 'Results in Numbers',
             description: '',
           },
           {
-            title: 'TESTIMONIALS',
-            extend_title: 'CUSTOMER TESTIMONIALS',
+            title: 'testimonials',
+            extend_title: 'customer testimonials',
             subtitle: 'Trusted Feedback',
             description: 'We work intensively in search of ideals that can add up in the lives of our customers. This is what moves us and we are grateful for the recognition.',
           },
-
         ],
         contacts: {
           openHours: 'Open Hours: Mon - Sat - 9:00 - 18:00',
