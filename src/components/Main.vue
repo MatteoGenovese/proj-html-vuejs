@@ -59,42 +59,49 @@
 
 
         <div class="w-25">
-          <h4>Vehicle Types</h4>
-          <div class="vehicle-row">
-            <div class="vehicle-container">
-              <img src="../assets/truck-1.png" alt="">
+          <div class="vehicles">
+            <h4>Vehicle Types</h4>
+            <div class="vehicle-row">
+              <div class="vehicle-container">
+                <img src="../assets/truck-1.png" alt="">
+              </div>
+              <div class="vehicle-information">
+                <div class="vehicle-size">Light</div>
+                <div class="vehicle-weight">Max Weight 1200 Kg</div>
+              </div>
             </div>
-            <div class="vehicle-information">
-              <div class="vehicle-size">Light</div>
-              <div class="vehicle-weight">Max Weight 1200 Kg</div>
+            <hr>
+            <div class="vehicle-row">
+              <div class="vehicle-container">
+                <img src="../assets/truck-1.png" alt="">
+              </div>
+              <div class="vehicle-information">
+                <div class="vehicle-size">Medium</div>
+                <div class="vehicle-weight">Max Weight 6000 Kg</div>
+              </div>
             </div>
+            <hr>
+            <div class="vehicle-row">
+              <div class="vehicle-container">
+                <img src="../assets/truck-1.png" alt="">
+              </div>
+              <div class="vehicle-information">
+                <div class="vehicle-size">Heavy</div>
+                <div class="vehicle-weight">Max Weight 24000 Kg</div>
+              </div>
+            </div>
+
           </div>
-          <hr>
-          <div class="vehicle-row">
-            <div class="vehicle-container">
-              <img src="../assets/truck-1.png" alt="">
-            </div>
-            <div class="vehicle-information">
-              <div class="vehicle-size">Medium</div>
-              <div class="vehicle-weight">Max Weight 6000 Kg</div>
-            </div>
-          </div>
-          <hr>
-          <div class="vehicle-row">
-            <div class="vehicle-container">
-              <img src="../assets/truck-1.png" alt="">
-            </div>
-            <div class="vehicle-information">
-              <div class="vehicle-size">Heavy</div>
-              <div class="vehicle-weight">Max Weight 24000 Kg</div>
-            </div>
-          </div>
-          <h4>Certifications</h4>
-          <div class="certification-row d-flex">
+
+          <div class="certifications">
+            <h4>Certifications</h4>
+            <div class="certification-row d-flex">
               <img src="../assets/certificate.png" alt="">
               <img src="../assets/certificate.png" alt="">
+            </div>
           </div>
-          
+
+
 
 
 
@@ -296,26 +303,39 @@ ul.with-list-style {
   font-style: italic;
 }
 
-.vehicle-row{
+.vehicle-row {
   display: flex;
-  .vehicle-container{
+
+  .vehicle-container {
     width: 90px;
     background-color: rgba($sixth_color, 0.4);
     border-radius: 5px;
     padding: 0.25rem 0.5rem;
     margin-right: 1rem;
-    img{
+
+    img {
       width: 100%;
     }
   }
 }
+.vehicles,
+.certifications{
+  h4{
+    margin-bottom: 1.5rem;
+  }
+}
 
-.certification-row{
-  height: 150px;
-    img{
+.certifications {
+  margin-top: 3rem;
+
+  .certification-row {
+    height: 150px;
+
+    img {
       height: 120px;
       margin-right: 10px;
       box-shadow: 5px 5px 4px #dddddd;
     }
+  }
 }
 </style>
