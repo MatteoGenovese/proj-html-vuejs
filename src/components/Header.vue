@@ -2,25 +2,13 @@
     <header>
         <section class="contacts">
             <div class="container">
-                <div class="open-hours">
-                    {{ contacts.openHours }}
-                </div>
-                <div class="telephone">
-                    {{ contacts.telephoneNumber }}
-                </div>
-                <div>
-                    {{ contacts.email }}
-                </div>
+                <div class="open-hours">{{ contacts.openHours }}</div>
+                <div class="telephone"> {{ contacts.telephoneNumber }}</div>
+                <div>{{ contacts.email }}</div>
                 <div class="social">
-                    <div id="facebook-icon">
-                        f
-                    </div>
-                    <div id="tweeter-icon">
-                        t
-                    </div>
-                    <div id="linkedin-icon">
-                        in
-                    </div>
+                    <div id="facebook-icon">f</div>
+                    <div id="tweeter-icon">t</div>
+                    <div id="linkedin-icon">in</div>
                 </div>
             </div>
         </section>
@@ -54,9 +42,9 @@ export default {
 <style lang="scss">
 @import "../styles/variables.scss";
 
-.contacts {
+section.contacts {
     background-color: $seventh_color;
-    color: $fifth_color;
+    color: $second_color;
     height: 50px;
 }
 

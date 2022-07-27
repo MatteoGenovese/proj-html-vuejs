@@ -1,10 +1,7 @@
 <template>
-
-  <li v-if="page.title!='numbers'">
+  <li v-if="page.title!='numbers' && page.title!='getintouch' ">
     {{page.title}}
   </li>
-
-
 </template>
 
 <script>
@@ -22,7 +19,7 @@ export default {
 
 <style lang="scss">
 
-li{
+.nav-bar li{
     height: 100%;
     list-style-type: none;
     display: flex;

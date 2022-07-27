@@ -74,7 +74,7 @@ export default {
           },
 
           {
-            title: 'get in touch',
+            title: 'getintouch',
             extend_title: 'send a message',
             highlitedSubtitle: 'touch',
             subtitle: 'get in',
