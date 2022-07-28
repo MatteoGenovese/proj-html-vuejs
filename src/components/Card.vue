@@ -23,6 +23,15 @@
         </div>
         <div class="quote-icon"><i class="fa-solid fa-quote-right"></i></div>
     </div>
+    <div class="card d-flex flex-column position-relative" v-else-if="need == 'links'">
+        <div class="card-title">
+            {{ card.topic }}
+        </div>
+        <ul>
+            <li v-for="(link,index) in card.links" :key="index" class="link">{{link}}</li>
+        </ul>
+
+    </div>
 </template>
 
 <script>
@@ -49,6 +58,7 @@ div.card {
     width: calc((100% / 3) - 20px);
     background-color: rgba($third_color, 0.1);
     padding: 4rem 3rem;
+    margin: 1rem;
 }
 
 div.card-img-container-fa {
@@ -108,4 +118,11 @@ div.card-title {
         color: rgba($fourth_color, $alpha: 0.3);
     }
 }
+ul{
+    li.link{
+    font-size: 1rem !important;
+
+}
+}
+
 </style>

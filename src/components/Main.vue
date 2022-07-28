@@ -38,7 +38,7 @@
 
     <!-- about -->
     <section :id="pages[1].title" class="jumbotron d-flex flex-column">
-      <div class="container d-flex flex-grow-1 align-items-center">
+      <div class="container flex-grow-1 d-flex align-items-center">
         <div class="w-75">
           <SectionHeading :page="pages[1]" />
           <div>

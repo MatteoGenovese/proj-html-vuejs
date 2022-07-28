@@ -3,6 +3,7 @@
     <Header :pages="pages" :contacts="contacts" />
     <Main :pages="pages" :contacts="contacts" :cards="cards" />
     <Footer :contacts="contacts" :footerLinks="footerLinks" />
+    <Copyright />
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import Main from './components/Main.vue';
 import Footer from './components/Footer.vue';
 import Header from './components/Header.vue';
+import Copyright from './components/Copyright.vue';
 
 export default {
   name: 'App',
@@ -18,7 +20,8 @@ export default {
     Header,
     Main,
     Footer,
-    Header
+    Header,
+    Copyright
   },
   data:
     function () {
@@ -91,11 +94,12 @@ export default {
         footerLinks: [
           {
             topic: 'About',
-            links: ['The Company', 'Institutional', 'Social & Events', 'Innovation', 'Environment', 'Technology']
+            links: ['The Company', 'Institutional', 'Social & Events', 'Innovation', 'Environment', 'Technology'],
           },
           {
             topic: 'Transport',
-            links: ['Industrialized', 'Chemicals', 'Packaged Liquids', 'Construction', 'Laminated Wood', 'And others']
+            links: ['Industrialized', 'Chemicals', 'Packaged Liquids', 'Construction', 'Laminated Wood', 'And others'],
+
           },
           {
             topic: 'Support',
