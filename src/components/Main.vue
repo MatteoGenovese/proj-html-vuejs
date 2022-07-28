@@ -2,6 +2,7 @@
   <main>
     <!-- Home -->
     <section :id="pages[0].title" class="d-flex flex-column">
+    <div class="back-image"></div>
       <div class="nav-bar d-flex">
         <div class="container">
           <div class="logo">
@@ -321,18 +322,27 @@ export default {
 
 
 #home {
-  background-image: url(../assets/bg-9.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+
 }
 
 main section {
   min-height: 980px;
 }
 
-section#home {
+section#home,
+.back-image {
   min-height: 976px;
+}
+.back-image{
+  position: absolute;
+  background-image: url(../assets/bg-9.jpg);
+  filter: brightness(0.4);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top:50px;
+  width: 100%;
+  z-index: -1;
 }
 
 section#about {
@@ -350,7 +360,7 @@ section#process {
 section#numbers {
   min-height: 660px;
   background-image: url(../assets/bg-10.jpg);
-    background-position: center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
