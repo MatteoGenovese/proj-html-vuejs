@@ -342,6 +342,10 @@ section#process {
 
 section#numbers {
   min-height: 660px;
+  background-image: url(../assets/bg-10.jpg);
+    background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 section#testimonials {
@@ -430,9 +434,7 @@ section#process {
   background-color: rgba($fourth_color, 0.1);
 }
 
-section#numbers {
-  background-image: url(../assets/bg-10.jpg);
-}
+
 
 section#testimonials {
   background-color: $first_color;
