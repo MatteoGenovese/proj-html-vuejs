@@ -111,17 +111,28 @@
     </section>
 
     <!-- services -->
-    <section :id="pages[2].title">
-      <div class="container ">
-        <div class="w-75">
+    <section :id="pages[2].title" class="d-flex flex-column justify-content-center">
+      <div class="container d-flex flex-column">
+        <div class="w-100 d-flex">
+          <div class="w-75">
           <SectionHeading :page="pages[2]" />
         </div>
+        <div class="w-25 d-flex justify-content-end align-items-end p-3">
+          
+          <MyButton :msg="'SEE ALL'" :buttonType="'bgc-none'" :link="'#'" :classBtn="'mt-3'" />
+        </div>
+        </div>
+        
+        <div class="w-100 d-flex justify-content-between">
+          <Card v-for="(card,index) in cards" :key="index" :card="card" />
+        </div>
+        
       </div>
     </section>
 
     <!-- process -->
-    <section :id="pages[3].title">
-      <div class="container ">
+    <section :id="pages[3].title" class="d-flex flex-column">
+      <div class="container d-flex flex-grow-1 align-items-center">
         <div class="w-75">
           <SectionHeading :page="pages[3]" />
         </div>
@@ -129,8 +140,8 @@
     </section>
 
     <!-- numbers -->
-    <section :id="pages[4].title">
-      <div class="container ">
+    <section :id="pages[4].title" class="d-flex flex-column">
+      <div class="container d-flex flex-grow-1 align-items-center">
         <div class="w-75">
           <SectionHeading :page="pages[4]" />
         </div>
@@ -138,8 +149,8 @@
     </section>
 
     <!-- testimonials -->
-    <section :id="pages[5].title">
-      <div class="container ">
+    <section :id="pages[5].title" class="d-flex flex-column">
+      <div class="container d-flex flex-grow-1 align-items-center">
         <div class="w-75">
           <SectionHeading :page="pages[5]" />
         </div>
@@ -147,8 +158,8 @@
     </section>
 
     <!-- getintouch -->
-    <section :id="pages[6].title.trim()">
-      <div class="container ">
+    <section :id="pages[6].title.trim()" class="d-flex flex-column">
+      <div class="container d-flex flex-grow-1 align-items-center">
         <div class="w-75">
           <SectionHeading :page="pages[6]" />
         </div>
@@ -162,6 +173,7 @@
 <script>
 import NavLink from './NavLink.vue';
 import SectionHeading from './SectionHeading.vue';
+import Card from './Card.vue';
 import MyButton from './MyButton.vue';
 
 export default {
@@ -183,8 +195,10 @@ export default {
   components: {
     NavLink,
     SectionHeading,
+    MyButton,
+    Card,
     MyButton
-  }
+}
   // add things here
 
 

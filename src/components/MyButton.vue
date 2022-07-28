@@ -39,7 +39,10 @@ a.button{
     height: 50px;
     text-decoration: none;
     border-radius: 5px ;
-    padding: 0.8rem 1.7rem;
+    padding: 0.5rem 1.7rem;
+    font-size: $button_fs;
+    font-weight: $button_fw;
+    
 
 }
 a.button.light-blue-button,
@@ -53,10 +56,12 @@ a.button.bgc-none-button{
 a.button.light-blue-button{
         background-color: $sixth_color;
         color: $second_color;
+        
 }
 a.button.bgc-none-button{
         color: $second_color;
         border: 1px solid $sixth_color ;
+        
 
 }
 </style>

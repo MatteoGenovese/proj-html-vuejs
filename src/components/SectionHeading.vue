@@ -36,14 +36,15 @@ export default {
 
 .container h2 {
   color: $sixth_color;
-  font-size: 1.1rem;
+  font-size: $title_fs;
   text-transform: uppercase;
+  font-weight: $title_fw;
 
 }
 
 .container h3 {
-  font-weight:bold;
-  font-size: 3.3rem;
+  font-weight: $subtitle_fw;
+  font-size: $subtitle_fs;
   display: inline-block;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -58,7 +59,8 @@ export default {
   margin-top: 1.4rem;
   color: $third_color;
   margin-left: 0;
-  font-size: 1.4rem;
+  font-size: $description_fs;
+  font-weight: $description_fw;
   color: $second_color;
 }
 

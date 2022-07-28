@@ -155,5 +155,12 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
+
+body{
+  font-size: $description_fs;
+  font-weight: $description_fw;
+}
+
 </style>
