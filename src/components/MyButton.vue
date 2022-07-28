@@ -1,10 +1,13 @@
 <template>
 
     <a v-if="buttonType == 'light-blue'" class="light-blue-button button" :href="link" :class="classBtn">
-        {{msg}}
+        {{ msg }}
     </a>
-    <a v-else-if="buttonType=='bgc-none'" class="bgc-none-button button" :href="link" :class="classBtn">
-        {{msg}}
+    <a v-else-if="buttonType == 'bgc-none'" class="bgc-none-button button" :href="link" :class="classBtn">
+        {{ msg }}
+    </a>
+    <a v-else-if="buttonType == 'light-blue-colors'" class="light-blue-colors button" :href="link" :class="classBtn">
+        {{ msg }}
     </a>
 </template>
 
@@ -34,34 +37,42 @@ export default {
 <style lang="scss">
 @import "../styles/variables.scss";
 
-a.button{
-
+a.button {
     height: 50px;
     text-decoration: none;
-    border-radius: 5px ;
+    border-radius: 5px;
     padding: 0.5rem 1.7rem;
     font-size: $button_fs;
     font-weight: $button_fw;
-    
-
 }
+
+a.light-blue-colors {
+    color: $fourth_color;
+    border: 1px solid $fourth_color ;
+
+    &:hover {
+        background-color: $fourth_color;
+        color: $second_color;
+
+    }
+}
+
+
 a.button.light-blue-button,
-a.button.bgc-none-button{
-    &:hover{
+a.button.bgc-none-button {
+    &:hover {
         background-color: $second_color;
         color: $fourth_color;
     }
 }
 
-a.button.light-blue-button{
-        background-color: $sixth_color;
-        color: $second_color;
-        
+a.button.light-blue-button {
+    background-color: $sixth_color;
+    color: $second_color;
 }
-a.button.bgc-none-button{
-        color: $second_color;
-        border: 1px solid $sixth_color ;
-        
 
+a.button.bgc-none-button {
+    color: $second_color;
+    border: 1px solid $sixth_color ;
 }
 </style>

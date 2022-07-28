@@ -34,6 +34,10 @@ export default {
 <style lang="scss">
 @import "../styles/variables.scss";
 
+div.heading{
+  margin-bottom: 3rem;
+}
+
 .container h2 {
   color: $sixth_color;
   font-size: $title_fs;

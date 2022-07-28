@@ -5,7 +5,8 @@
       <div class="nav-bar d-flex">
         <div class="container">
           <div class="logo">
-            NEXGEN
+            <div class="nex">NEX</div>
+            <div class="gen">GEN</div>
           </div>
           <div class="nav-links">
             <ul>
@@ -115,18 +116,18 @@
       <div class="container d-flex flex-column">
         <div class="w-100 d-flex">
           <div class="w-75">
-          <SectionHeading :page="pages[2]" />
+            <SectionHeading :page="pages[2]" />
+          </div>
+          <div class="w-25 d-flex justify-content-end align-items-end pb-5">
+
+            <MyButton :msg="'SEE ALL'" :buttonType="'bgc-none'" :link="'#'" :classBtn="'mt-3'" />
+          </div>
         </div>
-        <div class="w-25 d-flex justify-content-end align-items-end p-3">
-          
-          <MyButton :msg="'SEE ALL'" :buttonType="'bgc-none'" :link="'#'" :classBtn="'mt-3'" />
-        </div>
-        </div>
-        
+
         <div class="w-100 d-flex justify-content-between">
-          <Card v-for="(card,index) in cards" :key="index" :card="card" :need="'services'"/>
+          <Card v-for="(card, index) in cards" :key="index" :card="card" :need="'services'" />
         </div>
-        
+
       </div>
     </section>
 
@@ -134,12 +135,32 @@
     <section :id="pages[3].title" class="d-flex flex-column">
       <div class="container d-flex flex-grow-1 align-items-center">
         <div class="w-100">
-          <SectionHeading :page="pages[3]"  class="text-center"/>
-          <div class="timing-line">
-            <div class="process-sequence">
+          <SectionHeading :page="pages[3]" class="text-center" />
+          <div class="timing-line d-flex justify-content-between">
+            <div class="process-sequence d-flex flex-column align-items-center">
               <div class="process-number">01</div>
-              <div class="process-title">wdfjweiufbi</div>
-              <div class="process-description">dfklnwibfweib</div>
+              <div class="process-title">Collection of information</div>
+              <div class="process-description">Lorem ipsum dolor sit amet consectetur.</div>
+            </div>
+            <div class="process-sequence d-flex flex-column align-items-center">
+              <div class="process-number">01</div>
+              <div class="process-title">Collection of information</div>
+              <div class="process-description">Lorem ipsum dolor sit amet consectetur.</div>
+            </div>
+            <div class="process-sequence d-flex flex-column align-items-center">
+              <div class="process-number">01</div>
+              <div class="process-title">Collection of information</div>
+              <div class="process-description">Lorem ipsum dolor sit amet consectetur.</div>
+            </div>
+            <div class="process-sequence d-flex flex-column align-items-center">
+              <div class="process-number">01</div>
+              <div class="process-title">Collection of information</div>
+              <div class="process-description">Lorem ipsum dolor sit amet consectetur.</div>
+            </div>
+            <div class="process-sequence d-flex flex-column align-items-center">
+              <div class="process-number">01</div>
+              <div class="process-title">Collection of information</div>
+              <div class="process-description">Lorem ipsum dolor sit amet consectetur.</div>
             </div>
 
           </div>
@@ -150,9 +171,28 @@
 
     <!-- numbers -->
     <section :id="pages[4].title" class="d-flex flex-column">
-      <div class="container d-flex flex-grow-1 align-items-center">
-        <div class="w-75">
+      <div class="container d-flex flex-grow-1 justify-content-center flex-column">
+        <div class="w-100">
           <SectionHeading :page="pages[4]" class="text-center" />
+        </div>
+        <div class="w-100 d-flex justify-content-around">
+          <div class="kpi">
+            <div class="number">128</div>
+            <div class="unity">Certifications</div>
+          </div>
+          <div class="kpi">
+            <div class="number">230</div>
+            <div class="unity">Employees</div>
+          </div>
+          <div class="kpi">
+            <div class="number">517</div>
+            <div class="unity">Customers</div>
+          </div>
+          <div class="kpi">
+            <div class="number">94</div>
+            <div class="unity">Countries Served</div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -161,10 +201,10 @@
     <section :id="pages[5].title" class="d-flex flex-column">
       <div class="container d-flex  flex-column flex-grow-1 align-items-center justify-content-center">
         <div class="w-75 d-flex flex-column align-items-center">
-          <SectionHeading :page="pages[5]" class="text-center"/>
+          <SectionHeading :page="pages[5]" class="text-center" />
         </div>
         <div class="w-100 d-flex">
-            <Card v-for="(card,index) in cards" :key="index" :card="card" :need="'feedback'"/>
+          <Card v-for="(card, index) in cards" :key="index" :card="card" :need="'feedback'" />
         </div>
       </div>
     </section>
@@ -174,6 +214,59 @@
       <div class="container d-flex flex-grow-1 align-items-center">
         <div class="w-75">
           <SectionHeading :page="pages[6]" />
+          <div class="form">
+            <div class="container">
+              <div class="row">
+                <div class="col"><input type="text" placeholder="Name"></div>
+                <div class="col"><input type="text" placeholder="Email"></div>
+              </div>
+              <div class="row">
+                <div class="col"><input type="text" placeholder="Phone"></div>
+                <div class="col">
+                  <select name="more-info" id="more-info">
+                    <option value="0">more-info</option>
+                    <option value="1">option1</option>
+                    <option value="2">option1</option>
+                    <option value="3">option1</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <input type="text" placeholder="Message">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col mt-4">
+                  <MyButton :msg="'GET IN TOUCH'" :buttonType="'light-blue'" :link="'get in touch'"
+                 />
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="w-25">
+          <div class="corporation">
+            <div class="corp-container">
+              <div class="corp-information">
+                <div class="corp-title"> <h4>Example Inc.</h4> </div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+                <div>Praesent diam lacus, dapibus sed imperdiet consectetur.</div>
+                <div class="corporation-contacts">
+                  <div class="phone-number">{{ contacts.telephoneNumber }}</div>
+                  <div class="email">{{ contacts.email }}</div>
+                  <div class="address">{{ contacts.address }}</div>
+                </div>
+                <div class="light-blue-color">
+                <MyButton :msg="'VIEW MAP'" :buttonType="'light-blue-colors'" :link="'#'" class="mt-3" />
+                </div>
+
+
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
@@ -207,7 +300,6 @@ export default {
   components: {
     NavLink,
     SectionHeading,
-    MyButton,
     Card,
     MyButton
 }
@@ -381,7 +473,8 @@ ul.with-list-style {
 }
 
 .vehicles,
-.certifications {
+.certifications,
+.corporation {
   h4 {
     margin-bottom: 1.5rem;
     color: $first_color;
@@ -409,7 +502,109 @@ div.vehicle-size {
 div.home-buttons {
   margin-left: -1rem;
 }
-div.timing-line{
-  border-top: 5px solid $sixth_color;
+
+div.timing-line {
+  border-top: 5px solid rgba($sixth_color, 0.5);
+
+  div.process-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: $first_color  !important;
+  }
+
 }
+
+div.process-sequence {
+  position: relative;
+  top: -1.7rem;
+  width: calc(100% / 5);
+
+  &>* {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .process-number {
+    width: 50px;
+    height: 50px;
+    font-weight: 700;
+    background-color: rgba($sixth_color, 1);
+    color: $fourth_color  !important;
+    border-radius: 50%;
+  }
+}
+
+.kpi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .number {
+    color: $sixth_color;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .unity {
+    color: $second_color;
+    font-weight: 600;
+
+  }
+}
+
+div.corp-title {
+  color: $first_color  !important;
+}
+
+
+.corp-container {
+  
+  padding: 0.25rem 0.5rem;
+  margin-right: 1rem;
+}
+
+div.vehicle-size {
+  color: $first_color;
+}
+
+.light-blue-color{
+  padding-top: 1rem;
+}
+
+div.corporation-contacts > *{
+  color: $fourth_color !important;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+div.corp-information > *{
+    padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.form input,
+section#getintouch .form select{
+  background-color: rgba($fifth_color, 0.5);
+  padding: .5rem 1rem;
+  border: 0;
+  margin-top:1rem;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  color: $third_color;
+
+  option{
+    color: $third_color;
+  }
+}
+.logo .nex{
+  height: 40px;
+  background-color: rgba($fourth_color, 0.7);
+  padding-left: 1.5rem;
+  border-radius: 20px 0 0 20px;
+}
+
+
 </style>
