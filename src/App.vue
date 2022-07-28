@@ -103,19 +103,19 @@ export default {
           },
         ],
         cards:[{
-          image_url: "",
+          image_url: "fa-solid fa-truck-ramp-box",
           cardTitle: "Technology",
           cardDescription:"We are continually focused on developing technology solutions adapted to our client's needs.",
           isFeedback:false,
         },
         {
-          image_url: "",
+          image_url: "fa-solid fa-temperature-low",
           cardTitle: "Reefer Cargo",
           cardDescription:"Regular and frequent monitoring from the receipt of the loaded container to final destination.",
           isFeedback:false,
         },
         {
-          image_url: "",
+          image_url: "fa-solid fa-boxes-stacked",
           cardTitle: "Dry Cargo",
           cardDescription:"We work with most types of dry cargo, from valuable cargo to the most dangerous requiring care.",
           isFeedback:false,

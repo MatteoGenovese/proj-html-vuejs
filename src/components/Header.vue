@@ -2,13 +2,13 @@
     <header>
         <section class="contacts">
             <div class="container">
-                <div class="open-hours">{{ contacts.openHours }}</div>
-                <div class="telephone"> {{ contacts.telephoneNumber }}</div>
-                <div>{{ contacts.email }}</div>
+                <div class="open-hours"><i class="fa-solid fa-clock"></i> {{ contacts.openHours }}</div>
+                <div class="telephone"><i class="fa-solid fa-phone"></i> {{ contacts.telephoneNumber }}</div>
+                <div><i class="fa-solid fa-envelope"></i> {{ contacts.email }}</div>
                 <div class="social">
-                    <div id="facebook-icon">f</div>
-                    <div id="tweeter-icon">t</div>
-                    <div id="linkedin-icon">in</div>
+                    <div id="facebook-icon"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div id="tweeter-icon"><i class="fa-brands fa-twitter"></i></div>
+                    <div id="linkedin-icon"><i class="fa-brands fa-linkedin-in"></i></div>
                 </div>
             </div>
         </section>

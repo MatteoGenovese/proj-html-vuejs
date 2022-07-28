@@ -13,7 +13,7 @@
             </ul>
           </div>
           <div>
-            C
+            <i class="fa-regular fa-user"></i>
           </div>
           <div class="social">
             <MyButton :msg="'GET IN TOUCH'" :buttonType="'light-blue'" :link="'get in touch'" />
