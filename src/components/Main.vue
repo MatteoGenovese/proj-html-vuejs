@@ -21,8 +21,8 @@
         </div>
       </div>
       <div class="home d-flex align-items-center justify-content-center flex-grow-1">
-        <div class="container d-flex align-items-center">
-          <div class="box w-50 d-flex flex-column justify-content-center">
+        <div class="container d-flex ">
+          <div class="box w-50 d-flex flex-column">
             <SectionHeading :page="pages[0]" />
             <div class="d-flex home-buttons">
               <MyButton :msg="'GET IN TOUCH'" :buttonType="'light-blue'" :link="'get in touch'"
