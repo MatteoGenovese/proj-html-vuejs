@@ -12,8 +12,10 @@
           <div><i class="fa-solid fa-phone"></i> {{ contacts.telephoneNumber }}</div>
           <div><i class="fa-solid fa-envelope"></i> {{ contacts.email }}</div>
           <div><i class="fa-solid fa-location-dot"></i>{{ contacts.address }}</div>
-          
-          <MyButton :msg="'GET IN TOUCH'" :buttonType="'bgc-none'" :link="'getintouch'" :classBtn="'mt-3'" />
+          <div class="mt-4">
+          <MyButton :msg="'GET IN TOUCH'" :buttonType="'bgc-none'" :link="'getintouch'" />
+          </div>
+
         </div>
 
         <div class="w-75 d-flex">
