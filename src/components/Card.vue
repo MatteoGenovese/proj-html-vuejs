@@ -120,7 +120,11 @@ div.card-title {
 }
 ul{
     li.link{
-    font-size: 1rem !important;
+    font-size: 1.3rem !important;
+    &:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
 
 }
 }
