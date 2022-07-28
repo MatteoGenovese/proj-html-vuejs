@@ -124,7 +124,7 @@
         </div>
         
         <div class="w-100 d-flex justify-content-between">
-          <Card v-for="(card,index) in cards" :key="index" :card="card" />
+          <Card v-for="(card,index) in cards" :key="index" :card="card" :need="'services'"/>
         </div>
         
       </div>
@@ -151,8 +151,13 @@
     <!-- testimonials -->
     <section :id="pages[5].title" class="d-flex flex-column">
       <div class="container d-flex flex-grow-1 align-items-center">
-        <div class="w-75">
+        <div class="w-100">
           <SectionHeading :page="pages[5]" />
+          <div class="d-flex">
+            <Card v-for="(card,index) in cards" :key="index" :card="card" :need="'feedback'"/>
+          </div>
+          
+
         </div>
       </div>
     </section>
