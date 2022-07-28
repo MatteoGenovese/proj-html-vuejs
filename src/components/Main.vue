@@ -329,6 +329,7 @@ main section {
   min-height: 980px;
 }
 
+
 section#home,
 .back-image {
   min-height: 976px;

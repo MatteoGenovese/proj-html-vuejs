@@ -165,6 +165,12 @@ export default {
 body{
   font-size: $description_fs;
   font-weight: $description_fw;
+  a:hover{
+    cursor: pointer;
+
+  }
 }
+
+
 
 </style>

@@ -53,6 +53,7 @@ a.light-blue-colors {
     &:hover {
         background-color: $fourth_color;
         color: $second_color;
+        cursor: pointer;
 
     }
 }
@@ -63,6 +64,7 @@ a.button.bgc-none-button {
     &:hover {
         background-color: $second_color;
         color: $fourth_color;
+                cursor: pointer;
     }
 }
 

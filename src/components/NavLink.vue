@@ -24,6 +24,9 @@ export default {
     list-style-type: none;
     display: flex;
     align-items: center;
+    &:hover{
+      cursor: pointer;
+    }
 }
 
 </style>
