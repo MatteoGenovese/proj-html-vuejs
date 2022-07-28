@@ -143,7 +143,7 @@
     <section :id="pages[4].title" class="d-flex flex-column">
       <div class="container d-flex flex-grow-1 align-items-center">
         <div class="w-75">
-          <SectionHeading :page="pages[4]" />
+          <SectionHeading :page="pages[4]" class="text-center" />
         </div>
       </div>
     </section>
