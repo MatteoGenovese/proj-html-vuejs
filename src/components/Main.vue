@@ -36,7 +36,7 @@
     </section>
 
     <!-- about -->
-    <section :id="pages[1].title.trim()" class="jumbotron d-flex flex-column">
+    <section :id="pages[1].title" class="jumbotron d-flex flex-column">
       <div class="container d-flex flex-grow-1 align-items-center">
         <div class="w-75">
           <SectionHeading :page="pages[1]" />
@@ -133,8 +133,17 @@
     <!-- process -->
     <section :id="pages[3].title" class="d-flex flex-column">
       <div class="container d-flex flex-grow-1 align-items-center">
-        <div class="w-75">
+        <div class="w-100">
           <SectionHeading :page="pages[3]"  class="text-center"/>
+          <div class="timing-line">
+            <div class="process-sequence">
+              <div class="process-number">01</div>
+              <div class="process-title">wdfjweiufbi</div>
+              <div class="process-description">dfklnwibfweib</div>
+            </div>
+
+          </div>
+
         </div>
       </div>
     </section>
@@ -399,5 +408,8 @@ div.vehicle-size {
 
 div.home-buttons {
   margin-left: -1rem;
+}
+div.timing-line{
+  border-top: 5px solid $sixth_color;
 }
 </style>
