@@ -254,9 +254,16 @@
                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
                 <div>Praesent diam lacus, dapibus sed imperdiet consectetur.</div>
                 <div class="corporation-contacts">
-                  <div class="phone-number">{{ contacts.telephoneNumber }}</div>
-                  <div class="email">{{ contacts.email }}</div>
-                  <div class="address">{{ contacts.address }}</div>
+                  <div class="phone-number d-flex">
+                    <div class="corp-icon mx-2"><i class="fa-solid fa-phone"></i></div>{{ contacts.telephoneNumber }}</div>
+                  <div class="email d-flex">
+                    <div class="corp-icon mx-2"><i class="fa-solid fa-envelope"></i> </div>
+                    
+                    {{ contacts.email }}</div>
+                  <div class="address d-flex">
+                    <div class="corp-icon mx-2"><i class="fa-solid fa-location-dot"></i></div>
+                    
+                    {{ contacts.address }}</div>
                 </div>
                 <div class="light-blue-color">
                 <MyButton :msg="'VIEW MAP'" :buttonType="'light-blue-colors'" :link="'#'" class="mt-3" />
@@ -612,5 +619,16 @@ section#getintouch .form select{
   border-radius: 20px 0 0 20px;
 }
 
-
+.corp-icon{
+    background-color: $sixth_color;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    border-radius: 50%;
+    i{
+      color: $fourth_color;
+    }
+}
 </style>
