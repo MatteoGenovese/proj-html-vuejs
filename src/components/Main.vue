@@ -150,14 +150,12 @@
 
     <!-- testimonials -->
     <section :id="pages[5].title" class="d-flex flex-column">
-      <div class="container d-flex flex-grow-1 align-items-center">
-        <div class="w-100">
-          <SectionHeading :page="pages[5]" />
-          <div class="d-flex">
+      <div class="container d-flex  flex-column flex-grow-1 align-items-center justify-content-center">
+        <div class="w-75 d-flex flex-column align-items-center">
+          <SectionHeading :page="pages[5]" class="text-center"/>
+        </div>
+        <div class="w-100 d-flex">
             <Card v-for="(card,index) in cards" :key="index" :card="card" :need="'feedback'"/>
-          </div>
-          
-
         </div>
       </div>
     </section>
