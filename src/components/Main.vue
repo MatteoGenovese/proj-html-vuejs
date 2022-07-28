@@ -215,7 +215,7 @@
         <div class="w-75">
           <SectionHeading :page="pages[6]" />
           <div class="form">
-            <div class="container">
+            
               <div class="row">
                 <div class="col"><input type="text" placeholder="Name"></div>
                 <div class="col"><input type="text" placeholder="Email"></div>
@@ -241,7 +241,7 @@
                   <MyButton :msg="'GET IN TOUCH'" :buttonType="'light-blue'" :link="'get in touch'"
                  />
                 </div>
-              </div>
+              
 
             </div>
           </div>
@@ -584,6 +584,10 @@ div.corporation-contacts > *{
 div.corp-information > *{
     padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.form{
+  margin-right: 3rem;
 }
 
 .form input,
