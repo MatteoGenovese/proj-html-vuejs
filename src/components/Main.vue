@@ -335,7 +335,7 @@ section#home{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  clip-path: polygon(0 0, 100% 0 , 100% 80% , 0 100% );
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
 
 
