@@ -635,4 +635,13 @@ section#getintouch .form select{
       color: $fourth_color;
     }
 }
+
+.nav-bar li{
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0rem 0.8rem;
+    border-radius: 5px;
+}
 </style>

@@ -20,13 +20,14 @@ export default {
 <style lang="scss">
 
 .nav-bar li{
-    height: 100%;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
     &:hover{
       cursor: pointer;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    &:active{
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     }
 }
+
 
 </style>
