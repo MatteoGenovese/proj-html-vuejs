@@ -2,7 +2,6 @@
   <main>
     <!-- Home -->
     <section :id="pages[0].title" class="d-flex flex-column">
-    <div class="back-image"></div>
       <div class="nav-bar d-flex">
         <div class="container">
           <div class="logo">
@@ -330,21 +329,14 @@ main section {
 }
 
 
-section#home,
-.back-image {
+section#home{
   min-height: 976px;
-}
-.back-image{
-  position: absolute;
-  background-image: url(../assets/bg-9.jpg);
-  filter: brightness(0.4);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ) , url(../assets/bg-9.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  top:50px;
-  width: 100%;
-  z-index: -1;
 }
+
 
 section#about {
   min-height: 1000px;
