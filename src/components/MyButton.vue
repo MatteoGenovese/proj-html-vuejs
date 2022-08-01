@@ -49,12 +49,14 @@ a.button {
 a.light-blue-colors {
     color: $fourth_color;
     border: 1px solid $fourth_color ;
-
     &:hover {
         background-color: $fourth_color;
         color: $second_color;
         cursor: pointer;
-
+        box-shadow: 0 10px 20px rgba($color: $fourth_color, $alpha: 0.5);
+    }
+    &:active{
+        box-shadow: 0 5px 10px rgba($color: $fourth_color, $alpha: 0.5);
     }
 }
 
@@ -64,7 +66,11 @@ a.button.bgc-none-button {
     &:hover {
         background-color: $second_color;
         color: $fourth_color;
-                cursor: pointer;
+        cursor: pointer;
+        box-shadow: 0 10px 20px rgba($color: $fourth_color, $alpha: 0.5);
+    }
+    &:active{
+        box-shadow: 0 5px 10px rgba($color: $fourth_color, $alpha: 0.5);
     }
 }
 
