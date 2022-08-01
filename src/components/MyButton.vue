@@ -44,7 +44,19 @@ a.button {
     padding: 0.5rem 1.7rem;
     font-size: $button_fs;
     font-weight: $button_fw;
+    &:hover{
+        animation-name: btnUp;
+        animation-duration: 0.5s;
+        box-shadow: 0 10px 20px rgba($color: $fourth_color, $alpha: 0.5);
+        cursor: pointer;
+    }
+    &:active{
+        box-shadow: 0 5px 10px rgba($color: $fourth_color, $alpha: 0.5);
+        cursor: pointer;
+    }
 }
+
+
 
 a.light-blue-colors {
     color: $fourth_color;
@@ -52,11 +64,6 @@ a.light-blue-colors {
     &:hover {
         background-color: $fourth_color;
         color: $second_color;
-        cursor: pointer;
-        box-shadow: 0 10px 20px rgba($color: $fourth_color, $alpha: 0.5);
-    }
-    &:active{
-        box-shadow: 0 5px 10px rgba($color: $fourth_color, $alpha: 0.5);
     }
 }
 
@@ -66,13 +73,10 @@ a.button.bgc-none-button {
     &:hover {
         background-color: $second_color;
         color: $fourth_color;
-        cursor: pointer;
-        box-shadow: 0 10px 20px rgba($color: $fourth_color, $alpha: 0.5);
-    }
-    &:active{
-        box-shadow: 0 5px 10px rgba($color: $fourth_color, $alpha: 0.5);
     }
 }
+
+
 
 a.button.light-blue-button {
     background-color: $sixth_color;
@@ -82,5 +86,14 @@ a.button.light-blue-button {
 a.button.bgc-none-button {
     color: $second_color;
     border: 1px solid $sixth_color ;
+}
+
+@keyframes btnUp{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
 }
 </style>
