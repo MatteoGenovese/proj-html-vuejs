@@ -44,6 +44,7 @@ a.button {
     padding: 0.5rem 1.7rem;
     font-size: $button_fs;
     font-weight: $button_fw;
+    display: inline-block;
     &:hover{
         animation-name: btnUp;
         animation-duration: 0.5s;
@@ -57,8 +58,6 @@ a.button {
     }
 }
 
-
-
 a.light-blue-colors {
     color: $fourth_color;
     border: 1px solid $fourth_color ;
@@ -68,23 +67,20 @@ a.light-blue-colors {
     }
 }
 
-
-a.button.light-blue-button,
-a.button.bgc-none-button {
+a.light-blue-button,
+a.bgc-none-button {
     &:hover {
         background-color: $second_color;
         color: $fourth_color;
     }
 }
 
-
-
-a.button.light-blue-button {
+a.light-blue-button {
     background-color: $sixth_color;
     color: $second_color;
 }
 
-a.button.bgc-none-button {
+a.bgc-none-button {
     color: $second_color;
     border: 1px solid $sixth_color ;
 }

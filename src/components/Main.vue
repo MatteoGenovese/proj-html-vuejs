@@ -430,7 +430,6 @@ section#home {
   h3 {
     color: $second_color;
   }
-
 }
 
 section#about {
@@ -444,8 +443,6 @@ section#services {
 section#process {
   background-color: rgba($fourth_color, 0.1);
 }
-
-
 
 section#testimonials {
   background-color: $first_color;
