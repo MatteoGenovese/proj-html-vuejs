@@ -47,6 +47,7 @@ a.button {
     &:hover{
         animation-name: btnUp;
         animation-duration: 0.5s;
+        animation-fill-mode: forwards;
         box-shadow: 0 10px 20px rgba($color: $fourth_color, $alpha: 0.5);
         cursor: pointer;
     }

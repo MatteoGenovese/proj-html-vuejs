@@ -27,8 +27,8 @@
             <SectionHeading :page="pages[0]" />
             <div class="d-flex home-buttons">
               <MyButton :msg="'GET IN TOUCH'" :buttonType="'light-blue'" :link="'get in touch'"
-                :classBtn="'mx-3 mt-3'" />
-              <MyButton :msg="'READ MORE'" :buttonType="'bgc-none'" :link="'about'" :classBtn="'mt-3'" />
+                :classBtn="'mx-3'" />
+              <MyButton :msg="'READ MORE'" :buttonType="'bgc-none'" :link="'about'" />
             </div>
           </div>
         </div>
@@ -120,7 +120,7 @@
           </div>
           <div class="w-25 d-flex justify-content-end align-items-end pb-5">
 
-            <MyButton :msg="'SEE ALL'" :buttonType="'bgc-none'" :link="'#'" :classBtn="'mt-3'" />
+            <MyButton :msg="'SEE ALL'" :buttonType="'bgc-none'" :link="'#'" />
           </div>
         </div>
 
@@ -238,7 +238,7 @@
               </div>
               <div class="row">
                 <div class="col mt-4">
-                  <MyButton :msg="'GET IN TOUCH'" :buttonType="'light-blue'" :link="'get in touch'"
+                  <MyButton :msg="'GET IN TOUCH'" :buttonType="'light-blue'" :link="'getintouch'"
                  />
                 </div>
               
@@ -265,9 +265,9 @@
                     
                     {{ contacts.address }}</div>
                 </div>
-                <div class="light-blue-color">
-                <MyButton :msg="'VIEW MAP'" :buttonType="'light-blue-colors'" :link="'#'" class="mt-3" />
-                </div>
+
+                <MyButton :msg="'VIEW MAP'" :buttonType="'light-blue-colors'" :link="'#'" />
+
 
 
               </div>
@@ -644,4 +644,5 @@ section#getintouch .form select{
     padding: 0rem 0.8rem;
     border-radius: 5px;
 }
+
 </style>
