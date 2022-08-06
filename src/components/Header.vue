@@ -49,7 +49,7 @@ header{
 section.contacts {
     background-color: $seventh_color;
     color: $second_color;
-    height: 50px;
+    height: 5rem;
 }
 
 .contacts>*{
@@ -61,8 +61,8 @@ section.contacts {
         height: 100%;
         display: flex;
         align-items: center;
-        padding-right: 5px;
-        padding-left: 5px;
+        padding-right: .5rem;
+        padding-left: .5rem;
         ul{
             margin-bottom: 0;
         }
@@ -70,14 +70,14 @@ section.contacts {
             height: 100%;
             display: flex;
             align-items: center;
-            padding-right: 5px;
-            padding-left: 5px;
+            padding-right: .5rem;
+            padding-left: .5rem;
             &>* {
                 height: 100%;
                 display: flex;
                 align-items: center;
-                padding-right: 5px;
-                padding-left: 5px;
+                padding-right: .5rem;
+                padding-left: .5rem;
             }
         }
     }

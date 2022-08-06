@@ -59,24 +59,24 @@ export default {
 
 footer {
   background-color: $first_color;
-  min-height: 610px;
+  min-height: 61rem;
   color: $second_color;
 
   .logo .nex {
-    height: 40px;
+    height: 4rem;
     background-color: rgba($fourth_color, 0.7);
     padding-left: 1.5rem;
-    border-radius: 20px 0 0 20px;
+    border-radius: 2rem 0 0 2rem;
   }
 
   .logo .gen {
-    height: 40px;
+    height: 4rem;
     color: $second_color;
   }
 
   .logo>* {
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: .5rem;
+    padding-left: .5rem;
   }
 }
 

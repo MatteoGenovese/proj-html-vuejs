@@ -1,12 +1,12 @@
 <template>
 
-    <a v-if="buttonType == 'light-blue'" class="light-blue-button button" :href="link" :class="classBtn">
+    <a v-if="buttonType == 'light-blue'" class="light-blue-button button d-flex align-items-center" :href="link" :class="classBtn">
         {{ msg }}
     </a>
-    <a v-else-if="buttonType == 'bgc-none'" class="bgc-none-button button" :href="link" :class="classBtn">
+    <a v-else-if="buttonType == 'bgc-none'" class="bgc-none-button button d-flex align-items-center" :href="link" :class="classBtn">
         {{ msg }}
     </a>
-    <a v-else-if="buttonType == 'light-blue-colors'" class="light-blue-colors button" :href="link" :class="classBtn">
+    <a v-else-if="buttonType == 'light-blue-colors'" class="light-blue-colors button d-flex align-items-center" :href="link" :class="classBtn">
         {{ msg }}
     </a>
 </template>
@@ -38,10 +38,10 @@ export default {
 @import "../styles/variables.scss";
 
 a.button {
-    height: 50px;
+    height: 3rem;
     text-decoration: none;
-    border-radius: 5px;
-    padding: 0.5rem 1.7rem;
+    border-radius: .5rem;
+    padding: 0.8rem 1.8rem;
     font-size: $button_fs;
     font-weight: $button_fw;
     display: inline-block;
@@ -49,18 +49,18 @@ a.button {
         animation-name: btnUp;
         animation-duration: 0.5s;
         animation-fill-mode: forwards;
-        box-shadow: 0 10px 20px rgba($color: $fourth_color, $alpha: 0.5);
+        box-shadow: 0 1rem 2rem rgba($color: $fourth_color, $alpha: 0.5);
         cursor: pointer;
     }
     &:active{
-        box-shadow: 0 5px 10px rgba($color: $fourth_color, $alpha: 0.5);
+        box-shadow: 0 .5rem 1rem rgba($color: $fourth_color, $alpha: 0.5);
         cursor: pointer;
     }
 }
 
 a.light-blue-colors {
     color: $fourth_color;
-    border: 1px solid $fourth_color ;
+    border: .1rem solid $fourth_color ;
     &:hover {
         background-color: $fourth_color;
         color: $second_color;
@@ -82,7 +82,7 @@ a.light-blue-button {
 
 a.bgc-none-button {
     color: $second_color;
-    border: 1px solid $sixth_color ;
+    border: .1rem solid $sixth_color ;
 }
 
 @keyframes btnUp{
@@ -90,7 +90,7 @@ a.bgc-none-button {
         transform: translateY(0);
     }
     100%{
-        transform: translateY(-10px);
+        transform: translateY(-1rem);
     }
 }
 </style>

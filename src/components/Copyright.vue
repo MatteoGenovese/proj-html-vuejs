@@ -23,10 +23,10 @@ export default {
 <style lang="scss">
 @import "../styles/variables.scss";
 #copyright{
-    height: 90px;
+    height: 9rem;
     background-color: #000;
     color: $second_color;
-    font-size: .8rem;
+    font-size: 1.3rem;
     .green-text{
         color: $sixth_color;
     }

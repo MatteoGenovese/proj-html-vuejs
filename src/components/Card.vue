@@ -55,15 +55,15 @@ export default {
 @import "../styles/variables.scss";
 
 div.card {
-    width: calc((100% / 3) - 20px);
+    width: calc((100% / 3) - 2rem);
     background-color: rgba($third_color, 0.1);
-    padding: 4rem 3rem;
-    margin: 1rem;
+    padding: 3rem 1.8rem;
+    margin: 1.6rem;
 }
 
 div.card-img-container-fa {
-    height: 60px;
-    margin-bottom: 1rem;
+    height: 6rem;
+    margin-bottom: 1.6rem;
 
     img {
         height: 100%;
@@ -71,8 +71,8 @@ div.card-img-container-fa {
 }
 
 div.card-img-container-png {
-    height: 30px;
-    margin-bottom: 1rem;
+    height: 3rem;
+    margin-bottom: 1.6rem;
 
     img {
         height: 100%;
@@ -87,8 +87,8 @@ div.card-title {
 
 .quote-icon {
     position: absolute;
-    bottom: 3rem;
-    right: 3rem;
+    bottom: 4.8rem;
+    right: 4.8rem;
     font-size: 2.5rem;
     i{
     color: $third_color;
@@ -98,8 +98,8 @@ div.card-title {
 
 .icon {
     font-size: 2.5rem;
-    width: 4rem;
-    height: 4rem;
+    width: 6.4rem;
+    height: 6.4rem;
     border-radius: 50%;
     background-color: rgba($fourth_color, $alpha: 0.3);
     display: flex;

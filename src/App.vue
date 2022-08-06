@@ -167,8 +167,11 @@ body{
   font-weight: $description_fw;
   a:hover{
     cursor: pointer;
-
   }
+}
+
+html{
+  font-size: 62.5%;  //10px
 }
 
 

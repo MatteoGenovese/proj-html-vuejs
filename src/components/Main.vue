@@ -26,8 +26,7 @@
           <div class="box w-50 d-flex flex-column">
             <SectionHeading :page="pages[0]" />
             <div class="d-flex home-buttons">
-              <MyButton :msg="'GET IN TOUCH'" :buttonType="'light-blue'" :link="'get in touch'"
-                :classBtn="'mx-3'" />
+              <MyButton :msg="'GET IN TOUCH'" :buttonType="'light-blue'" :link="'get in touch'" :classBtn="'mx-3'" />
               <MyButton :msg="'READ MORE'" :buttonType="'bgc-none'" :link="'about'" />
             </div>
           </div>
@@ -64,7 +63,7 @@
           <div class="vehicles">
             <h4>Vehicle Types</h4>
             <div class="vehicle-row">
-              <div class="vehicle-container">
+              <div class="vehicle-container d-flex align-items-center">
                 <img src="../assets/truck-1.png" alt="">
               </div>
               <div class="vehicle-information">
@@ -74,7 +73,7 @@
             </div>
             <hr>
             <div class="vehicle-row">
-              <div class="vehicle-container">
+              <div class="vehicle-container d-flex align-items-center">
                 <img src="../assets/truck-1.png" alt="">
               </div>
               <div class="vehicle-information">
@@ -84,7 +83,7 @@
             </div>
             <hr>
             <div class="vehicle-row">
-              <div class="vehicle-container">
+              <div class="vehicle-container d-flex align-items-center">
                 <img src="../assets/truck-1.png" alt="">
               </div>
               <div class="vehicle-information">
@@ -97,9 +96,9 @@
 
           <div class="certifications">
             <h4>Certifications</h4>
-            <div class="certification-row d-flex">
-              <img src="../assets/certificate.png" alt="">
-              <img src="../assets/certificate.png" alt="">
+            <div class="certification-row d-flex flex-wrap">
+              <img src="../assets/certificate.png" alt="" class="m-2">
+              <img src="../assets/certificate.png" alt="" class="m-2">
             </div>
           </div>
 
@@ -215,33 +214,32 @@
         <div class="w-75">
           <SectionHeading :page="pages[6]" />
           <div class="form">
-            
-              <div class="row">
-                <div class="col"><input type="text" placeholder="Name"></div>
-                <div class="col"><input type="text" placeholder="Email"></div>
+
+            <div class="row">
+              <div class="col"><input type="text" placeholder="Name"></div>
+              <div class="col"><input type="text" placeholder="Email"></div>
+            </div>
+            <div class="row">
+              <div class="col"><input type="text" placeholder="Phone"></div>
+              <div class="col">
+                <select name="more-info" id="more-info">
+                  <option value="0">more-info</option>
+                  <option value="1">option1</option>
+                  <option value="2">option1</option>
+                  <option value="3">option1</option>
+                </select>
               </div>
-              <div class="row">
-                <div class="col"><input type="text" placeholder="Phone"></div>
-                <div class="col">
-                  <select name="more-info" id="more-info">
-                    <option value="0">more-info</option>
-                    <option value="1">option1</option>
-                    <option value="2">option1</option>
-                    <option value="3">option1</option>
-                  </select>
-                </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <input type="text" placeholder="Message">
               </div>
-              <div class="row">
-                <div class="col">
-                  <input type="text" placeholder="Message">
-                </div>
+            </div>
+            <div class="row">
+              <div class="col-3 mt-4">
+                <MyButton :msg="'GET IN TOUCH'" :buttonType="'light-blue'" :link="'getintouch'" />
               </div>
-              <div class="row">
-                <div class="col mt-4">
-                  <MyButton :msg="'GET IN TOUCH'" :buttonType="'light-blue'" :link="'getintouch'"
-                 />
-                </div>
-              
+
 
             </div>
           </div>
@@ -250,24 +248,31 @@
           <div class="corporation">
             <div class="corp-container">
               <div class="corp-information">
-                <div class="corp-title"> <h4>Example Inc.</h4> </div>
+                <div class="corp-title">
+                  <h4>Example Inc.</h4>
+                </div>
                 <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
                 <div>Praesent diam lacus, dapibus sed imperdiet consectetur.</div>
                 <div class="corporation-contacts">
                   <div class="phone-number d-flex">
-                    <div class="corp-icon mx-2"><i class="fa-solid fa-phone"></i></div>{{ contacts.telephoneNumber }}</div>
+                    <div class="corp-icon mx-2"><i class="fa-solid fa-phone"></i></div>{{ contacts.telephoneNumber }}
+                  </div>
                   <div class="email d-flex">
                     <div class="corp-icon mx-2"><i class="fa-solid fa-envelope"></i> </div>
-                    
-                    {{ contacts.email }}</div>
+
+                    {{ contacts.email }}
+                  </div>
                   <div class="address d-flex">
                     <div class="corp-icon mx-2"><i class="fa-solid fa-location-dot"></i></div>
-                    
-                    {{ contacts.address }}</div>
+
+                    {{ contacts.address }}
+                  </div>
                 </div>
-
-                <MyButton :msg="'VIEW MAP'" :buttonType="'light-blue-colors'" :link="'#'" />
-
+                <div class="row">
+                  <div class="col-7 mt-4">
+                    <MyButton :msg="'VIEW MAP'" :buttonType="'light-blue-colors'" :link="'#'" />
+                  </div>
+                </div>
 
 
               </div>
@@ -309,7 +314,7 @@ export default {
     SectionHeading,
     Card,
     MyButton
-}
+  }
   // add things here
 
 
@@ -320,18 +325,16 @@ export default {
 @import "../styles/variables.scss";
 
 
-#home {
-
-}
+#home {}
 
 main section {
-  min-height: 980px;
+  min-height: 61.25rem;
 }
 
 
-section#home{
-  min-height: 976px;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ) , url(../assets/bg-9.jpg);
+section#home {
+  min-height: 61.25rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/bg-9.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -339,39 +342,27 @@ section#home{
 }
 
 
-section#about {
-  min-height: 1000px;
-}
-
-section#services {
-  min-height: 940px;
-}
-
-section#process {
-  min-height: 810px;
-}
-
 section#numbers {
-  min-height: 660px;
   background-image: url(../assets/bg-10.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-section#testimonials {
-  min-height: 870px;
+section#testimonials,
+section#getintouch,
+section#number,
+section#services,
+section#about {
+  min-height: 60rem;
 }
 
-section#getintouch {
-  min-height: 950px;
-}
 
 
 
 .nav-bar {
   color: $second_color;
-  height: 50px;
+  height: 3rem;
 }
 
 .nav-bar>* {
@@ -379,8 +370,8 @@ section#getintouch {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1.2rem;
-  font-size: 1.4rem;
+  margin-top: 2rem;
+  font-size: 1, 375rem;
   text-transform: uppercase;
 
 
@@ -388,8 +379,8 @@ section#getintouch {
     height: 100%;
     display: flex;
     align-items: center;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: .5rem;
+    padding-left: .5rem;
 
     ul {
       margin-bottom: 0;
@@ -399,15 +390,15 @@ section#getintouch {
       height: 100%;
       display: flex;
       align-items: center;
-      padding-right: 5px;
-      padding-left: 5px;
+      padding-right: .5rem;
+      padding-left: .5rem;
 
       &>*:not(a) {
         height: 100%;
         display: flex;
         align-items: center;
-        padding-right: 5px;
-        padding-left: 5px;
+        padding-right: .5rem;
+        padding-left: .5rem;
       }
     }
   }
@@ -453,15 +444,15 @@ section#get {
 }
 
 ul.with-list-style {
-  padding-left: 1rem;
+  padding-left: 1.5rem;
 }
 
 .quote {
-  padding-left: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-left: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   border-left: 5px solid rgba($sixth_color, 0.4);
   font-style: italic;
 }
@@ -470,11 +461,11 @@ ul.with-list-style {
   display: flex;
 
   .vehicle-container {
-    width: 90px;
+    width: 9rem;
     background-color: rgba($sixth_color, 0.4);
-    border-radius: 5px;
-    padding: 0.25rem 0.5rem;
-    margin-right: 1rem;
+    border-radius: .5rem;
+    padding: 0.5rem 1rem;
+    margin-right: 1.5rem;
 
     img {
       width: 100%;
@@ -486,7 +477,7 @@ ul.with-list-style {
 .certifications,
 .corporation {
   h4 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.2rem;
     color: $first_color;
   }
 }
@@ -496,28 +487,28 @@ div.vehicle-size {
 }
 
 .certifications {
-  margin-top: 3rem;
+  margin-top: 5rem;
 
   .certification-row {
-    height: 150px;
+    height: 12rem;
 
     img {
-      height: 120px;
-      margin-right: 10px;
-      box-shadow: 5px 5px 4px #dddddd;
+      height: 7rem;
+      margin-right: 1rem;
+      box-shadow: .5rem .5rem .4rem #dddddd;
     }
   }
 }
 
 div.home-buttons {
-  margin-left: -1rem;
+  margin-left: -1.5rem;
 }
 
 div.timing-line {
-  border-top: 5px solid rgba($sixth_color, 0.5);
+  border-top: .5rem solid rgba($sixth_color, 0.5);
 
   div.process-title {
-    font-size: 1.8rem;
+    font-size: 1.875rem;
     font-weight: 800;
     color: $first_color  !important;
   }
@@ -526,7 +517,7 @@ div.timing-line {
 
 div.process-sequence {
   position: relative;
-  top: -1.7rem;
+  top: -2.7rem;
   width: calc(100% / 5);
 
   &>* {
@@ -537,8 +528,8 @@ div.process-sequence {
   }
 
   .process-number {
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height: 5rem;
     font-weight: 700;
     background-color: rgba($sixth_color, 1);
     color: $fourth_color  !important;
@@ -554,7 +545,7 @@ div.process-sequence {
 
   .number {
     color: $sixth_color;
-    font-size: 1.8rem;
+    font-size: 1.875rem;
     font-weight: 700;
   }
 
@@ -571,75 +562,77 @@ div.corp-title {
 
 
 .corp-container {
-  
-  padding: 0.25rem 0.5rem;
-  margin-right: 1rem;
+
+  padding: 0.5rem 1rem;
+  margin-right: 1.5rem;
 }
 
 div.vehicle-size {
   color: $first_color;
 }
 
-.light-blue-color{
+.light-blue-color {
+  padding-top: 1.5rem;
+}
+
+div.corporation-contacts>* {
+  color: $fourth_color  !important;
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-div.corporation-contacts > *{
-  color: $fourth_color !important;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-div.corp-information > *{
-    padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+div.corp-information>* {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.form{
-  margin-right: 3rem;
+.form {
+  margin-right: 5rem;
 }
 
 .form input,
-section#getintouch .form select{
+section#getintouch .form select {
   background-color: rgba($fifth_color, 0.5);
-  padding: .5rem 1rem;
+  padding: 1rem 1.5rem;
   border: 0;
-  margin-top:1rem;
-  border-radius: 5px;
+  margin-top: 1.5rem;
+  border-radius: .5rem;
   width: 100%;
-  height: 50px;
+  height: 5rem;
   color: $third_color;
 
-  option{
+  option {
     color: $third_color;
   }
 }
-.logo .nex{
-  height: 40px;
+
+.logo .nex {
+  height: 4rem;
   background-color: rgba($fourth_color, 0.7);
-  padding-left: 1.5rem;
-  border-radius: 20px 0 0 20px;
+  padding-left: 2.5rem;
+  border-radius: 2rem 0 0 2rem;
 }
 
-.corp-icon{
-    background-color: $sixth_color;
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    border-radius: 50%;
-    i{
-      color: $fourth_color;
-    }
+.corp-icon {
+  background-color: $sixth_color;
+  min-width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  i {
+    color: $fourth_color;
+  }
 }
 
-.nav-bar li{
-    height: 100%;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    padding: 0rem 0.8rem;
-    border-radius: 5px;
+.nav-bar li {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0rem .5rem;
+  border-radius: .5rem;
 }
-
 </style>

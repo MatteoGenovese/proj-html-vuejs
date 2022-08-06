@@ -22,10 +22,10 @@ export default {
 .nav-bar li{
     &:hover{
       cursor: pointer;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
     }
     &:active{
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
     }
 }
 

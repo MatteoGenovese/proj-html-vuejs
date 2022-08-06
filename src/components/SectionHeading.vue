@@ -50,17 +50,17 @@ div.heading{
   font-weight: $subtitle_fw;
   font-size: $subtitle_fs;
   display: inline-block;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .container .highlited-subtitle {
   background-color: rgba($sixth_color, 0.4);
-  border-radius: 3px;
+  border-radius: .3rem;
 }
 
 .container p {
-  margin-top: 1.4rem;
+  margin-top: 2.25rem;
   color: $third_color;
   margin-left: 0;
   font-size: $description_fs;
@@ -69,7 +69,7 @@ div.heading{
 }
 
 div .subtitle {
-  margin-left: -0.5rem;
+  margin-left: -0.8rem;
 }
 
 section#about {
@@ -84,7 +84,7 @@ section#about {
   }
   div.vehicle-size{
     color: $first_color;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
   }
 }
