@@ -1,7 +1,7 @@
 <template>
   <main>
     <!-- Home -->
-    <section :id="pages[0].title" class="d-flex flex-column">
+    <section id="home" class="d-flex flex-column">
       <div class="nav-bar d-flex">
         <div class="container">
           <div class="logo">
@@ -36,7 +36,7 @@
     </section>
 
     <!-- about -->
-    <section :id="pages[1].title" class="jumbotron d-flex flex-column">
+    <section id="about" class="jumbotron d-flex flex-column">
       <div class="container flex-grow-1 d-flex align-items-center">
         <div class="w-75">
           <SectionHeading :page="pages[1]" />
@@ -111,7 +111,7 @@
     </section>
 
     <!-- services -->
-    <section :id="pages[2].title" class="d-flex flex-column justify-content-center">
+    <section id="services" class="d-flex flex-column justify-content-center">
       <div class="container d-flex flex-column">
         <div class="w-100 d-flex">
           <div class="w-75">
@@ -131,7 +131,7 @@
     </section>
 
     <!-- process -->
-    <section :id="pages[3].title" class="d-flex flex-column">
+    <section id="process" class="d-flex flex-column">
       <div class="container d-flex flex-grow-1 align-items-center">
         <div class="w-100">
           <SectionHeading :page="pages[3]" class="text-center" />
@@ -169,7 +169,7 @@
     </section>
 
     <!-- numbers -->
-    <section :id="pages[4].title" class="d-flex flex-column">
+    <section id="numbers" class="d-flex flex-column">
       <div class="container d-flex flex-grow-1 justify-content-center flex-column">
         <div class="w-100">
           <SectionHeading :page="pages[4]" class="text-center" />
@@ -197,7 +197,7 @@
     </section>
 
     <!-- testimonials -->
-    <section :id="pages[5].title" class="d-flex flex-column">
+    <section id="testimonials" class="d-flex flex-column">
       <div class="container d-flex  flex-column flex-grow-1 align-items-center justify-content-center">
         <div class="w-75 d-flex flex-column align-items-center">
           <SectionHeading :page="pages[5]" class="text-center" />
@@ -209,7 +209,7 @@
     </section>
 
     <!-- getintouch -->
-    <section :id="pages[6].title.trim()" class="d-flex flex-column">
+    <section id="getintouch" class="d-flex flex-column">
       <div class="container d-flex flex-grow-1 align-items-center">
         <div class="w-75">
           <SectionHeading :page="pages[6]" />
