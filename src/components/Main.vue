@@ -255,17 +255,16 @@
                 <div>Praesent diam lacus, dapibus sed imperdiet consectetur.</div>
                 <div class="corporation-contacts">
                   <div class="phone-number d-flex">
-                    <div class="corp-icon mx-2"><i class="fa-solid fa-phone"></i></div>{{ contacts.telephoneNumber }}
+                    <div class="corp-icon mx-2"><i class="fa-solid fa-phone"></i></div>
+                    <div>{{ contacts.telephoneNumber }}</div>
                   </div>
                   <div class="email d-flex">
                     <div class="corp-icon mx-2"><i class="fa-solid fa-envelope"></i> </div>
-
-                    {{ contacts.email }}
+                    <div>{{ contacts.email }}</div>
                   </div>
                   <div class="address d-flex">
                     <div class="corp-icon mx-2"><i class="fa-solid fa-location-dot"></i></div>
-
-                    {{ contacts.address }}
+                    <div>{{ contacts.address }}</div>
                   </div>
                 </div>
                 <div class="row">
@@ -325,151 +324,269 @@ export default {
 @import "../styles/variables.scss";
 
 
-#home {}
-
-main section {
-  min-height: 61.25rem;
-}
-
-
-section#home {
+#home {
   min-height: 61.25rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/bg-9.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 75% 100%, 0% 100%);
-}
 
+  .logo {
+    .gen {
+      display: flex;
+      align-items: center;
+      vertical-align: middle;
+    }
 
-section#numbers {
-  background-image: url(../assets/bg-10.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+    .nex {
+      display: flex;
+      align-items: center;
+      height: 4rem;
+      background-color: rgba($fourth_color, 0.7);
+      padding-left: 2.5rem;
+      border-radius: 2rem 0 0 2rem;
+    }
+  }
 
-section#testimonials,
-section#getintouch,
-section#number,
-section#services,
-section#about {
-  min-height: 60rem;
-}
+  h3 {
+    color: $second_color;
+  }
 
+  .nav-bar {
+    color: $second_color;
+    height: 3rem;
 
+    li {
+      height: 100%;
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      padding: 0rem .5rem;
+      border-radius: .5rem;
+    }
 
-
-.nav-bar {
-  color: $second_color;
-  height: 3rem;
-}
-
-.nav-bar>* {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2rem;
-  font-size: 1, 375rem;
-  text-transform: uppercase;
-
-
-  &>* {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-right: .5rem;
-    padding-left: .5rem;
-
-    ul {
-      margin-bottom: 0;
+    .nav-links {
+      flex-grow: 1;
+      height: 100%;
+      justify-content: flex-end;
     }
 
     &>* {
       height: 100%;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      padding-right: .5rem;
-      padding-left: .5rem;
+      margin-top: 2rem;
+      font-size: 1.375rem;
+      text-transform: uppercase;
 
-      &>*:not(a) {
+      &>* {
         height: 100%;
         display: flex;
         align-items: center;
         padding-right: .5rem;
         padding-left: .5rem;
+
+        ul {
+          margin-bottom: 0;
+        }
+
+        &>* {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          padding-right: .5rem;
+          padding-left: .5rem;
+
+          &>*:not(a) {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-right: .5rem;
+            padding-left: .5rem;
+          }
+        }
+      }
+    }
+  }
+  .home-buttons {
+    margin-left: -1.5rem;
+  }
+}
+
+#about {
+  background-color: $second_color;
+  .vehicle-row {
+    display: flex;
+    .vehicle-size {
+      color: $first_color;
+    }
+    .vehicle-container {
+      width: 9rem;
+      background-color: rgba($sixth_color, 0.4);
+      border-radius: .5rem;
+      padding: 0.5rem 1rem;
+      margin-right: 1.5rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  ul.with-list-style {
+    padding-left: 1.5rem;
+  }
+  .quote {
+    padding-left: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-left: 5px solid rgba($sixth_color, 0.4);
+    font-style: italic;
+  }
+  .certifications {
+    margin-top: 5rem;
+    .certification-row {
+      height: 12rem;
+      img {
+        height: 7rem;
+        margin-right: 1rem;
+        box-shadow: .5rem .5rem .4rem #dddddd;
       }
     }
   }
 }
 
-.nav-links {
-  flex-grow: 1;
+#services {
+  background-color: $first_color;
 }
-
-.nav-links {
-  height: 100%;
-  justify-content: flex-end;
-}
-
-section>* {
-  height: 100%;
-}
-
-section#home {
-  h3 {
-    color: $second_color;
+#process {
+  background-color: rgba($fourth_color, 0.1);
+  .timing-line {
+    border-top: .5rem solid rgba($sixth_color, 0.5);
+    .process-title {
+      font-size: 1.875rem;
+      font-weight: 800;
+      color: $first_color  !important;
+    }
+  }
+  .process-sequence {
+    position: relative;
+    top: -2.7rem;
+    width: calc(100% / 5);
+    &>* {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .process-number {
+      width: 5rem;
+      height: 5rem;
+      font-weight: 700;
+      background-color: rgba($sixth_color, 1);
+      color: $fourth_color  !important;
+      border-radius: 50%;
+    }
   }
 }
 
-section#about {
-  background-color: $second_color;
+#numbers {
+  background-image: url(../assets/bg-10.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .kpi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .number {
+      color: $sixth_color;
+      font-size: 1.875rem;
+      font-weight: 700;
+    }
+    .unity {
+      color: $second_color;
+      font-weight: 600;
+    }
+  }
 }
 
-section#services {
+#testimonials {
   background-color: $first_color;
 }
 
-section#process {
-  background-color: rgba($fourth_color, 0.1);
-}
-
-section#testimonials {
-  background-color: $first_color;
-}
-
-section#get {
+#getintouch {
   background-color: $second_color;
-}
+  .corp-icon {
+    background-color: $sixth_color;
+    min-width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    .light-blue-color {
+      padding-top: 1.5rem;
+    }
+    i {
+      color: $fourth_color;
+    }
+  }
+  .form {
+    margin-right: 5rem;
+    input,
+    select {
+      background-color: rgba($fifth_color, 0.5);
+      padding: 1rem 1.5rem;
+      border: 0;
+      margin-top: 1.5rem;
+      border-radius: .5rem;
+      width: 100%;
+      height: 5rem;
+      color: $third_color;
+    }
+  }
 
-ul.with-list-style {
-  padding-left: 1.5rem;
-}
 
-.quote {
-  padding-left: 3rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  border-left: 5px solid rgba($sixth_color, 0.4);
-  font-style: italic;
-}
 
-.vehicle-row {
-  display: flex;
-
-  .vehicle-container {
-    width: 9rem;
-    background-color: rgba($sixth_color, 0.4);
-    border-radius: .5rem;
+  .corp-container {
     padding: 0.5rem 1rem;
     margin-right: 1.5rem;
-
-    img {
-      width: 100%;
+    .corp-title {
+      color: $first_color  !important;
     }
+    .corp-information>* {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    .corporation-contacts>* {
+      color: $fourth_color  !important;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      &>* {
+        display: flex;
+        align-items: center;
+      }
+      .phone-number {
+        display: flex;
+        align-items: center;
+
+        &>* {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+main section {
+  min-height: 60rem;
+  &>* {
+    height: 100%;
   }
 }
 
@@ -482,157 +599,5 @@ ul.with-list-style {
   }
 }
 
-div.vehicle-size {
-  color: $first_color;
-}
 
-.certifications {
-  margin-top: 5rem;
-
-  .certification-row {
-    height: 12rem;
-
-    img {
-      height: 7rem;
-      margin-right: 1rem;
-      box-shadow: .5rem .5rem .4rem #dddddd;
-    }
-  }
-}
-
-div.home-buttons {
-  margin-left: -1.5rem;
-}
-
-div.timing-line {
-  border-top: .5rem solid rgba($sixth_color, 0.5);
-
-  div.process-title {
-    font-size: 1.875rem;
-    font-weight: 800;
-    color: $first_color  !important;
-  }
-
-}
-
-div.process-sequence {
-  position: relative;
-  top: -2.7rem;
-  width: calc(100% / 5);
-
-  &>* {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .process-number {
-    width: 5rem;
-    height: 5rem;
-    font-weight: 700;
-    background-color: rgba($sixth_color, 1);
-    color: $fourth_color  !important;
-    border-radius: 50%;
-  }
-}
-
-.kpi {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  .number {
-    color: $sixth_color;
-    font-size: 1.875rem;
-    font-weight: 700;
-  }
-
-  .unity {
-    color: $second_color;
-    font-weight: 600;
-
-  }
-}
-
-div.corp-title {
-  color: $first_color  !important;
-}
-
-
-.corp-container {
-
-  padding: 0.5rem 1rem;
-  margin-right: 1.5rem;
-}
-
-div.vehicle-size {
-  color: $first_color;
-}
-
-.light-blue-color {
-  padding-top: 1.5rem;
-}
-
-div.corporation-contacts>* {
-  color: $fourth_color  !important;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-div.corp-information>* {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.form {
-  margin-right: 5rem;
-}
-
-.form input,
-section#getintouch .form select {
-  background-color: rgba($fifth_color, 0.5);
-  padding: 1rem 1.5rem;
-  border: 0;
-  margin-top: 1.5rem;
-  border-radius: .5rem;
-  width: 100%;
-  height: 5rem;
-  color: $third_color;
-
-  option {
-    color: $third_color;
-  }
-}
-
-.logo .nex {
-  height: 4rem;
-  background-color: rgba($fourth_color, 0.7);
-  padding-left: 2.5rem;
-  border-radius: 2rem 0 0 2rem;
-}
-
-.corp-icon {
-  background-color: $sixth_color;
-  min-width: 5rem;
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-
-  i {
-    color: $fourth_color;
-  }
-}
-
-.nav-bar li {
-  height: 100%;
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  padding: 0rem .5rem;
-  border-radius: .5rem;
-}
 </style>

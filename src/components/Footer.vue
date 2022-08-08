@@ -62,25 +62,30 @@ footer {
   min-height: 61rem;
   color: $second_color;
 
-  .logo .nex {
-    height: 4rem;
-    background-color: rgba($fourth_color, 0.7);
-    padding-left: 1.5rem;
-    border-radius: 2rem 0 0 2rem;
-  }
-
-  .logo .gen {
-    height: 4rem;
-    color: $second_color;
+  .logo {
+    .gen {
+      display: flex;
+      align-items: center;
+      vertical-align: middle;
+    }
+    .nex {
+            display: flex;
+      align-items: center;
+      height: 4rem;
+      background-color: rgba($fourth_color, 0.7);
+      padding-left: 2.5rem;
+      border-radius: 2rem 0 0 2rem;
+    }
   }
 
   .logo>* {
     padding-right: .5rem;
     padding-left: .5rem;
   }
-}
-
-.corp-info > *{
+  .corp-info > *{
   margin-top: 1rem;
 }
+}
+
+
 </style>
